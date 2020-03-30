@@ -1,0 +1,105 @@
+/*==========================SERVICE======================*/
+.vnt-service {
+	padding-top: 0
+}
+.service {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb
+}
+.service-list .item {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.service .img {
+	display: block;
+	position: relative;
+    overflow: hidden;
+    padding-top: 66%;
+}
+.service .img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.service .caption {    
+    padding: 20px 30px
+}
+.service .caption .tend {
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.service .caption .des {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    margin: 15px 0
+}
+.service .caption .link .txt {
+    font-size: 14px;
+    color: #007dc8;
+}
+.service .caption .link .txt:hover, .service .caption .link .txt:hover span:before {
+    color: #181818
+}
+.service-list.lv2 .service .caption .tend {
+    font-size: 15px;
+    font-weight: 500
+}
+/*----------OTHER SOLUTION-------------*/
+.otherItems .service {
+	margin-top: 20px;    
+}
+.otherItems .caption .tend a {
+    -webkit-line-clamp: 2;
+    height: 56px;
+}
+.otherItems .caption .des {
+    -webkit-line-clamp: 4;
+    height: 96px;
+}
+.otherItems .sl-gen .slick-arrow {    
+    top: 25%;
+}
+/*================================================================*/
+/*=========================RESPONSIVE=============================*/
+/*================================================================*/
+@media all and (min-width: 768px) { 
+    
+}    
+@media all and (max-width: 991px) {   
+    .service-list .row {
+        margin: 0 -5px
+    }
+    .service-list .item {
+        padding: 0 5px
+    }
+    .service {
+        margin-bottom: 20px;
+    }
+    .service .caption {    
+        padding: 20px
+    }
+    .service .caption .des {
+        margin: 10px 0 15px;
+    }
+}
+@media all and (max-width: 767px){
+    
+}
+@media all and (max-width: 580px){	
+	.service-list.lv1 .item {
+        width: 100%;
+    }
+}
+@media all and (max-width: 360px){	
+	.service-list.lv2 .item {
+        width: 100%;
+    }
+}

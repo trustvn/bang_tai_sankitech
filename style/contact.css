@@ -1,0 +1,238 @@
+/*-----------INFO CONTACT-----------*/
+.vnt-contact {
+    padding-top: 0
+}
+.vnt-contact .textContact {   
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666; 
+    padding: 35px;    
+    background-color: #f3f2f0
+}
+.contactBg {       
+    color: #FFFFFF;
+    position: relative;
+}
+.contactBg .bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.info-contact {   
+    width: 100%;
+    max-width: 830px;
+    margin: auto;   
+    padding-bottom: 115px 
+}
+.info-contact .content {    
+    width: 300px;
+    padding: 15px 20px 30px;
+    background-color: rgba(1,112,180,.8);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.info-contact .small-txt {
+    font-size: 11px;
+    line-height: 28px;
+    margin-bottom: 40px
+}
+.info-contact .nameContact {   
+    font-weight: 500;   
+    font-size: 16px;
+    line-height: 24px; 
+    text-transform: uppercase;
+    margin-bottom: 25px
+}
+.info-contact a {
+    color: #FFFFFF
+}
+.info-contact a:hover {
+    text-decoration: underline;
+}
+.vnt-contact .slogan { 
+    position: relative;   
+    background-color: #0170b4;
+    padding: 40px 0;
+    text-align: right;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ffffff;    
+    font-weight: 700;
+    font-style: italic;
+}
+.vnt-contact .slogan:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: url(../images/dotBg.png) 0 0 repeat;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+.map-area {
+    padding-top: 60px
+}
+/*=================================FORM CONTACT===================================*/
+.boxContact {
+    padding: 60px 0
+}
+.form-contact {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;    
+}
+.mrg10 {
+    margin-bottom: 10px
+}
+.form-contact label {
+    display: block;    
+    font-size: 16px;
+    line-height: 25px;
+    color: #0170b4;
+    font-weight: 600;
+    margin-bottom: 8px
+}
+.form-contact .form-group {
+    margin-bottom: 30px
+}
+.form-contact .form-group .col:nth-child(3), .form-contact .form-group .col:nth-child(4) {
+    margin-top: 10px
+}
+.form-contact input, .form-contact textarea, .form-contact select {
+    width: 100%; 
+    border: 1px solid #eeeeee;
+    background: #FFFFFF;
+    height: 45px;
+    padding: 6px 12px;        
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.form-control:focus {
+    border-color: #1b458c;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.form-contact textarea {
+    height: 99px;
+    resize: none;
+}
+.form-contact .input-group {
+    width: 100%;    
+}
+.form-contact .link .button-w {
+    display: inline-block;
+    height: 45px;    
+    min-width: 150px;
+     -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.form-contact .link .button-w.send-btn {
+     background-color: #0170b4;     
+}
+.form-contact .link .button-w.reset-btn {
+    background-color: #4f4f4f;
+}
+.form-contact .link .button-w span {
+    padding-left: 35px
+}
+.form-contact .link .button-w span:before {
+    font-size: 15px;    
+}
+.form-contact .link .button-w.send-btn span:before {
+     content: '\f1d8';
+     color: #FFFFFF;    
+}
+.form-contact .link .button-w.reset-btn span:before {
+    content: '\f0e2';
+    color: #005abb
+}
+.form-contact .link button ~ button {
+    margin-left: 10px;
+}
+/*================================================================*/
+/*=========================RESPONSIVE=============================*/
+/*================================================================*/
+@media all and (min-width: 768px) {
+   .form-contact .input-group {        
+        margin-top: -44px
+    }
+}
+@media all and (min-width: 992px) {
+    .contactBg .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;       
+    }
+    .vnt-contact .slogan {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;        
+    }    
+}
+@media all and (max-width: 991px) {
+    .vnt-contact .textContact {  
+        padding: 25px 20px;
+    }
+    .contactBg .bg {
+        padding-top: 34%
+    } 
+    .info-contact .content {
+        width: 100%
+    }
+    .boxContact {
+        padding: 30px 0 40px
+    }
+    .map-area {
+        padding-top: 30px;
+    }
+    .info-contact {           
+        padding-bottom: 0 
+    }
+    .vnt-contact .slogan {
+        padding: 15px 0;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media all and (max-width: 767px) {
+    .form-contact .form-group {
+        margin-bottom: 20px
+    }    
+    .mb_mrg10 {
+        margin-bottom: 10px
+    }
+    .form-contact .input-group {
+        margin-top: 10px
+    }
+}
+@media all and (max-width: 360px) {
+    .form-contact .link {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media all and (max-width: 321px) {
+    .form-contact .link .button-w {
+        min-width: 130px
+    }
+    .vnt-contact .slogan {
+        font-size: 15px 20px;
+        line-height: 25px;
+    }
+}
